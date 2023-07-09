@@ -1,0 +1,20 @@
+.profile{
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    position: relative;
+    h2{
+        position: absolute;
+        z-index: 1;
+        top: 80px;
+        color: rgba(170, 170, 170, 0.4);
+        font-family:fantasy;
+        font-weight: 400;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+    }
+    .profile_container{
+        position: absolute;
+        padding: 0 3rem;
+        z-index: 2;
+    }
+}
