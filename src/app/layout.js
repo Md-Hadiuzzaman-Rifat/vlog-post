@@ -8,12 +8,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="max-w-7xl center">
       <AnimatedCursor
-        innerSize={15}
-        outerSize={20}
+        innerSize={10}
+        outerSize={15}
         color="255, 255 ,255"
         outerAlpha={0.4}
         innerScale={0.7}
-        outerScale={5}
+        outerScale={4}
       />
         <Navbar></Navbar>
         {children}
