@@ -1,13 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&family=Space+Grotesk:wght@300;400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@layer base {
+  html {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+  }
 }
-.center{
-    margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+.center {
+  margin: 0 auto;
 }
