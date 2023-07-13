@@ -3,18 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  margin: 0 auto;
+}
+
 @layer base {
   html {
     font-family: "Open Sans", sans-serif;
     font-family: "Space Grotesk", sans-serif;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  // overflow: hidden;
-}
-.center {
-  margin: 0 auto;
+
+@layer components{
+  .approachBox{
+    @apply border rounded-[200px] gap-8 border-gray-500  hover:border-orange-500 p-16 flex justify-center flex-col align-middle box-content
+  }
+  .resize_RowToColumn{
+    @apply flex flex-col md:flex-row gap-2
+  }
 }

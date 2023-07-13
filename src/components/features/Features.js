@@ -1,12 +1,29 @@
-import React from 'react';
-import "./Featuers.scss";
+import React from "react";
+import "./Features.scss";
+import TextBtn from "../textBtn/TextBtn";
+import Link from "next/link";
+import { BsArrowUpRight } from "react-icons/bs";
+import FeatureBox from "../featureBox/FeatureBox";
 
 const Features = () => {
-    return (
+  return (
+    <div className="features">
+      <div>
         <div>
-            
+          <TextBtn>Features</TextBtn>
+          <h2 className="text-white text-2xl font-bold text">
+            We help you to go online & increase your conversion rate.{" "}
+          </h2>
         </div>
-    );
+        <div>
+          <Link className="text-white font-extralight text-sm" href="/">
+            View All Service <BsArrowUpRight />
+          </Link>
+        </div>
+      </div>
+      <FeatureBox></FeatureBox>
+    </div>
+  );
 };
 
 export default Features;
