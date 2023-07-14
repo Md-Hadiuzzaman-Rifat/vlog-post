@@ -1,0 +1,15 @@
+.pricing{
+    @apply text-white;
+    h1{
+        @apply text-3xl font-bold my-6 mb-16;
+    }
+    p{
+        @apply font-light leading-8 text-[16px];
+    }
+    span{
+        @apply text-gray-400 py-6 text-[14px];
+    }
+    li{
+        @apply font-bold
+    }
+}

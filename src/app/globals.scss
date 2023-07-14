@@ -21,7 +21,7 @@
 
 @layer components{
   .approachBox{
-    @apply border rounded-[200px] gap-8 border-gray-500  hover:border-orange-500 p-16 flex justify-center flex-col align-middle box-content
+    @apply border rounded-[200px] gap-8 border-gray-500  hover:border-orange-500 p-8 flex justify-center flex-col align-middle box-content
   }
   .resize_RowToColumn{
     @apply flex flex-col md:flex-row gap-2

@@ -1,0 +1,25 @@
+
+.address{
+    p{
+        @apply font-light text-sm leading-[32px]
+    }
+    a{
+        @apply text-gray-300  text-xs leading-[42px]
+    }
+    h3{
+        @apply font-semibold text-2xl pb-4
+    }
+    .address_input{
+        @apply bg-transparent border my-4 border-gray-700 p-2 min-w-[150px] w-[300px] rounded-md
+    }
+    .address_bottom{
+        @apply flex justify-between mb-4
+    }
+    .address_bottom p{
+        @apply text-[12px] text-white 
+        
+    }
+    .address_bottom h3{
+        @apply text-gray-400 tracking-[15px]
+    }
+}

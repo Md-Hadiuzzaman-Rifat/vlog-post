@@ -12,6 +12,7 @@ const Approach = () => {
         <SingleApproach></SingleApproach>
         <SingleApproach></SingleApproach>
         <SingleApproach></SingleApproach>
+        
       </div>
     </div>
   );

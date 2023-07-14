@@ -4,6 +4,7 @@ import TextBtn from "../textBtn/TextBtn";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import FeatureBox from "../featureBox/FeatureBox";
+import LinkText from "../linkText/LinkText";
 
 const Features = () => {
   return (
@@ -17,7 +18,7 @@ const Features = () => {
         </div>
         <div>
           <Link className="text-white font-extralight text-sm" href="/">
-            View All Service <BsArrowUpRight />
+            <LinkText>View All Services</LinkText>
           </Link>
         </div>
       </div>

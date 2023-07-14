@@ -1,0 +1,10 @@
+.link_text {
+  @apply relative;
+  .link_text_content {
+    @apply border border-white py-2 px-3 
+        rounded-full text-sm hover:underline flex gap-2 align-middle;
+    div {
+      @apply w-[36px] h-[36px] absolute left-[0.5px] top-[1.5px] rounded-full;
+    }
+  }
+}
