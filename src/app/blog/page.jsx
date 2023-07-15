@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./blog.scss";
 import BlogTop from "@/components/BlogTop/BlogTop";
@@ -7,6 +8,9 @@ import CircleBtn from "@/components/circleBtn/CircleBtn";
 import Address from "@/components/address/Address";
 import FooterBanner from "@/components/footerBanner/FooterBanner";
 import MovingText from "@/components/MovingText/MovingText";
+import Team from "@/components/Team/Team";
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 const Blog = () => {
   return (
@@ -17,6 +21,10 @@ const Blog = () => {
         <MovingText></MovingText>
         <BlogCompanies></BlogCompanies>
         <FooterBanner></FooterBanner>
+        <ParallaxProvider>
+        <Team></Team>
+        </ParallaxProvider>
+        
         <Address></Address>
       </div>
     </div>

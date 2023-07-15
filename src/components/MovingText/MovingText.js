@@ -26,7 +26,7 @@ const Element = (props) => {
   const {title} = props;
   
   return (
-    <div className="element">{title}</div>
+    <div className="element font-[400%]">{title}</div>
   )
 }
 
@@ -53,7 +53,7 @@ const Element = (props) => {
     wrapperRef.current.style.animation = null;
     shiftNext([...items]);
   };
-
+ 
   const shiftNext = (copy) => {
     const firstitem = copy.shift();
     copy.splice(copy.length, 0, firstitem);

@@ -25,6 +25,7 @@
     "react-animated-cursor": "^2.7.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
+    "react-scroll-parallax": "^3.4.2",
     "react-spinners": "^0.13.8",
     "sass": "^1.63.6",
     "swr": "^2.2.0",

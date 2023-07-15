@@ -4,7 +4,7 @@
   --animationDistance: -100px;
   --animationDuration: 8s;
 }
-#root {
+#root { 
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -38,9 +38,8 @@
 .element {
   display: inline-block;
   padding: 0 20px;
-  font-family: 'Tektur', cursive;
-  font-size: 72px;
-
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
   color: black;
   font-size: 70px;
   -webkit-text-stroke-width: 0.8px;
