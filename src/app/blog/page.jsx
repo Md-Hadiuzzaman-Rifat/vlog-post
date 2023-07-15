@@ -6,6 +6,7 @@ import BlogCompanies from "@/components/BlogCompanies/BlogCompanies";
 import CircleBtn from "@/components/circleBtn/CircleBtn";
 import Address from "@/components/address/Address";
 import FooterBanner from "@/components/footerBanner/FooterBanner";
+import MovingText from "@/components/MovingText/MovingText";
 
 const Blog = () => {
   return (
@@ -13,6 +14,7 @@ const Blog = () => {
       <div className="blog_container max-w-[100%] px-1 md:px-16 flex flex-col justify-center text-white">
         <BlogTop></BlogTop>
         <BlogGallery></BlogGallery>
+        <MovingText></MovingText>
         <BlogCompanies></BlogCompanies>
         <FooterBanner></FooterBanner>
         <Address></Address>

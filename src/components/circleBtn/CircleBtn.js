@@ -5,9 +5,9 @@ const CircleBtn = () => {
   return (
     <div>
       <div className="button-container-2">
-        <span className="mas">MASK1</span>
+        <span className="mas">HOVER</span>
         <button id="work" type="button" name="Hover">
-          MASK1
+          CLICK
         </button>
       </div>
     </div>

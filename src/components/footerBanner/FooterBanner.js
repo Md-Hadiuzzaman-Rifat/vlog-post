@@ -14,8 +14,8 @@ const FooterBanner = () => {
         <div className="paragraph">
           <div className="text">
             <h3 className=" font-bold text-4xl">
-              Have a project in mind? <br />{" "}
-              <span className=" font-sans italic">Lets get to work.</span>
+              Have a project in mind?<br />{" "} Lets  
+              <span className=" font-sans font-light italic"> get to work.</span>
             </h3>
           </div>
           <CircleBtn></CircleBtn>
