@@ -19,7 +19,7 @@ const Address = () => {
           <div>
             <h3>Say Hello</h3>
             <p>hadirifat100@gmail.com</p>
-            <h2 className="text-xl my-4 text-orange-300">+880 1910803372</h2>
+            <h3 className="text-xl my-4 text-orange-300">+880 1910803372</h3>
           </div>
         </div>
         <div

@@ -3,19 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.center {
-  margin: 0 auto;
-}
-
 @layer base {
   html {
     font-family: "Open Sans", sans-serif;
     font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+@layer utilities{
+  .custom-p{
+    @apply font-light text-[15px] leading-[28px] tracking-wider;
+  }
+  .custom-h1{
+    @apply font-black text-2xl md:text-3xl lg:text-4xl
+  }
+  .large-h1{
+    @apply font-black text-3xl md:text-4xl lg:text-6xl
   }
 }
 
@@ -26,4 +29,14 @@
   .resize_RowToColumn{
     @apply flex flex-col md:flex-row gap-2
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+.center {
+  margin: 0 auto;
 }

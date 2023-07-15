@@ -1,0 +1,15 @@
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+    justify-content: space-around;
+    div{
+        width: 300px;
+        min-width: 200px;
+    }
+}
+@media screen and (max-width:786px) {
+    .grid{
+        grid-template-columns: auto auto;
+    }
+}

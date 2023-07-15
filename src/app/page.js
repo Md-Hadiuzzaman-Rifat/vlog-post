@@ -13,7 +13,7 @@ import Address from "@/components/address/Address";
 
 const page = () => {
   return (
-    <div className="bg-[#1d1d1d] px-16">
+    <div className="bg-[#1d1d1d] md:px-16 px-4">
       <Banner></Banner>
       <Features></Features>
       <Accordion></Accordion>
