@@ -42,7 +42,7 @@ const Team = () => {
   return (
     <ParallaxBanner
       layers={[background, headline, foreground, gradientOverlay]}
-      className="aspect-[2/1] bg-gray-900 mb-32"
+      className="aspect-[2/1] bg-gray-900"
     />
   );
 };
