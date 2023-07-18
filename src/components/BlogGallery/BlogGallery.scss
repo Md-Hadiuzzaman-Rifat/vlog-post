@@ -1,3 +1,11 @@
 .blog-body{
     @apply text-2xl leading-9
 }
+.blog-images{
+    @media  screen and (max-width:640px) {
+        flex:1
+    }
+    img{
+        width:100%
+    }
+}

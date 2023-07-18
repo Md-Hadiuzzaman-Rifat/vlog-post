@@ -4,7 +4,7 @@ import "./Address.scss";
 
 const Address = () => {
   return (
-    <div className="address flex flex-col min-h-[70vh] justify-between">
+    <div className="address blog-container max-w-[100%] flex flex-col min-h-[70vh] justify-between">
       <div className="resize_RowToColumn justify-evenly gap-8">
         <div
           className="address_left text-white justify-evenly flex flex-row gap-8"

@@ -24,4 +24,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width:640px) {
+        width: 100%;
+    }
 }

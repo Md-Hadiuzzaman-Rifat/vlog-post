@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import "./BlogGallery.scss"
+import "./BlogGallery.scss";
 
 const BlogGallery = () => {
   return (
-    <div className="Gallery">
+    <div className="Gallery blog-container">
       <div className="resize_RowToColumn gap-5 md:justify-between">
-        <div style={{ flex: 2 }}>
+        <div className="blog-images" style={{ flex: 2 }}>
           <Image
             style={{ height: "400px", objectFit: "cover", borderRadius: "5%" }}
             src="/sq1.jpg"
@@ -31,8 +31,10 @@ const BlogGallery = () => {
         </div>
       </div>
       <div className="story resize_RowToColumn mt-24">
-        <div style={{flex:2}} className="custom-p">OUR STORY.</div>
-        <div style={{flex:5}} className="custom-h1 blog-body">
+        <div style={{ flex: 2, marginBottom:"50px" }} className="custom-p">
+          OUR STORY.
+        </div>
+        <div style={{ flex: 5 }} className="custom-h1 blog-body">
           GeekFolio are digital marketing experts and can partner with you to
           implement tactical campaigns which engage and connect audiences whilst
           driving ROI for your brand. We are SEO and SEM professionals and have

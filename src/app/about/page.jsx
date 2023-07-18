@@ -1,3 +1,6 @@
+import BlogCompanies from "@/components/BlogCompanies/BlogCompanies";
+import BlogGallery from "@/components/BlogGallery/BlogGallery";
+import MovingText from "@/components/MovingText/MovingText";
 import Scroll from "@/components/Scroll/Scroll";
 import React from "react";
 

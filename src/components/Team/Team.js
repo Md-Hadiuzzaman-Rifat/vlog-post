@@ -17,7 +17,7 @@ const Team = () => {
     expanded: false,
     children: (
       <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="tracking-widest text-[500%] md:text-[800%] lg:text-[2000%] sm:font-[900] md:text-8xl text-white font-thin">
+        <h1 className="tracking-widest text-[500%] md:text-[800%] lg:text-[2000%] sm:font-[900] md:text-8xl pb-12 text-white font-bold">
           TEAM
         </h1>
       </div>
@@ -35,7 +35,7 @@ const Team = () => {
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-#1f1f1f" />
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-black" />
     ),
   };
 

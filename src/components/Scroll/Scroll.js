@@ -8,7 +8,7 @@ import CircleBtn from "../circleBtn/CircleBtn";
 export default function Scroll() {
   const alignCenter = { display: "flex", alignItems: "center" };
   return (
-    <div className=" mb-20 block min-h-[110vh] ">
+    <div className=" mb-20 block min-h-[120vh] ">
       <div className={styles.background}/>
       <Parallax pages={4} className="overflow-y-scroll no-scrollbar">
         <ParallaxLayer

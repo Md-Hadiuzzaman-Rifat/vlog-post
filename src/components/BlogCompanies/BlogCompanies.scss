@@ -8,8 +8,14 @@
         min-width: 200px;
     }
 }
-@media screen and (max-width:786px) {
+@media screen and (max-width:700px) {
     .grid{
         grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 640px){
+    .grid{
+        grid-template-columns: auto 
+        ;
     }
 }

@@ -3,22 +3,22 @@ import React, {useEffect, useState, useRef, useCallback} from "react";
 import "./MovingText.scss"
 
 const newsItems = [{
-        key: "A B O U T   U S",
+        key: "ABOUT US",
       },
       {
-        key: "A B O U T   U S",
+        key: "ABOUT US",
       },
       {
-        key: "A B O U T   U S",
+        key: "ABOUT US",
       },
       {
-        key: "A B O U T   U S",
+        key: "ABOUT US",
       },
       {
-        key: "A B O U T   U S",
+        key: "ABOUT US",
       },
       {
-        key: "A B O U T   U S",
+        key: "ABOUT US",
       },
       ];
 
@@ -70,6 +70,7 @@ const Element = (props) => {
         {items.map((obj, index) => <Element title={obj.key} key={obj.key+index} />
         )} 
       </div>
+      <div className="space"></div>
     </div>
   )
 }

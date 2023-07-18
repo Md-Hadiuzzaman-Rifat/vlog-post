@@ -12,12 +12,12 @@ import Team from "@/components/Team/Team";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Scroll from "@/components/Scroll/Scroll";
 
-// blog_container max-w-[100%] px-1 md:px-16 flex flex-col justify-center text-white
 
 const Blog = () => {
   return (
     <div className="blog w-[1300px]">
-      <div className="">
+
+      <div>
         <BlogTop></BlogTop>
         <BlogGallery></BlogGallery>
         <MovingText></MovingText>

@@ -1,4 +1,4 @@
-
+ 
 .address{
     p{
         @apply font-light text-sm leading-[32px]
@@ -10,7 +10,7 @@
         @apply font-semibold text-2xl pb-4
     }
     .address_input{
-        @apply bg-transparent border my-4 border-gray-700 p-2 min-w-[150px] w-[300px] rounded-md
+        @apply bg-transparent border my-4 border-gray-700 p-2 min-w-[100px] max-w-[500px] rounded-md
     }
     .address_bottom{
         @apply flex justify-between mb-4

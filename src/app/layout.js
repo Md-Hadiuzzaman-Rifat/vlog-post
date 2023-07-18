@@ -8,7 +8,7 @@ import { SessionProvider } from "next-auth/react";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-7xl center">
+      <body className="max-w-[1400px] center scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-black">
         <SessionProvider>
           <AnimatedCursor
             innerSize={10}
