@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '../box/Box';
+import "./FeatureBox.scss"
 
 const details=[
     {
@@ -21,7 +22,7 @@ const details=[
 
 const FeatureBox = () => {
     return (
-        <div>
+        <div className="custom_grid">
             {
                 details.map((single)=><Box key={single.id} img={single.img} title={single.title}/>)
             }

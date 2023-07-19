@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = ({children}) => {
     return (
-        <button className='px-2 py-2 w-[200px] font-thin rounded-full bg-[#f08f74] center'>
+        <button className='py-[10px]  px-[35px] font-thin rounded-full max-h-[45px] bg-[#f08f74] center text-black'>
             {children}
         </button>
     );

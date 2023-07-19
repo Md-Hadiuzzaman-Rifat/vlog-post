@@ -3,12 +3,14 @@ import React from "react";
 import AccordionModal from "../accordionModal/AccordionModal";
 const Accordion = () => {
   return (
-    <div className="accordion">
+    // shadow on the accordion
+    <div className="accordion mt-8 mb-24">
       <div className="flex flex-col">
         <div className="self-end opacity-25">
           <Image width={150} height={100} src="/shap2.png" alt="design"></Image>
         </div>
-        <div className="accordion_main flex flex-row justify-between min-h-screen">
+        {/* main accordion start  */}
+        <div className="accordion_main gap-12 flex flex-col sm:flex-row justify-between items-center min-h-screen mt-8">
           <div className="accordion_main_image w-10/12">
             <Image
               style={{ flex: 1 }}

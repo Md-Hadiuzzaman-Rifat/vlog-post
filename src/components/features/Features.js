@@ -12,14 +12,17 @@ const Features = () => {
       <div>
         <div>
           <TextBtn>Features</TextBtn>
-          <h2 className="text-white text-2xl font-bold text">
-            We help you to go online & increase your conversion rate.{" "}
-          </h2>
-        </div>
-        <div>
-          <Link className="text-white font-extralight text-sm" href="/">
-            <LinkText>View All Services</LinkText>
-          </Link>
+          <div className="flex items-center resize_RowToColumn justify-between">
+            <h2 className="custom-h1 text-white my-12">
+              We help you to go online & increase your conversion rate.{" "}
+            </h2>
+          
+          <div>
+            <Link className="text-white font-extralight text-sm" href="/">
+              <LinkText>View All Services</LinkText>
+            </Link>
+          </div>
+          </div>
         </div>
       </div>
       <FeatureBox></FeatureBox>

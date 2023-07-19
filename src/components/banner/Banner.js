@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="banner_section  h-screen  flex content-between items-center">
+    <div className="banner_section  min-h-screen  flex content-between items-center">
       <div className="flex flex-col mb-24 justify-start banner_section_left flex-1 mb">
         <h1 className="text-5xl tracking-wider text-white font-semibold leading-[4.5rem]">
           Better design for your digital products.

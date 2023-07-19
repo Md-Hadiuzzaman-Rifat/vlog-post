@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import "./Address.scss";
 
+
 const Address = () => {
   return (
     <div className="address blog-container max-w-[100%] flex flex-col min-h-[70vh] justify-between">

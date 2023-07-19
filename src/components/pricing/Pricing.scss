@@ -10,6 +10,9 @@
         @apply text-gray-400 py-6 text-[14px];
     }
     li{
-        @apply font-bold
+        @apply text-base font-light py-2
+    }
+    .btn-black{
+        @apply border-black rounded-lg
     }
 }
