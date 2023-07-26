@@ -16,6 +16,9 @@
   .resize_RowToColumn{
     @apply flex flex-col lg:flex-row gap-8 lg:justify-between
   }
+  .resize_RowToColumnMd{
+    @apply flex flex-col lg:flex-row gap-8 lg:justify-between
+  }
   .blog-container{
     @apply px-4 md:px-8 lg:px-24
   }

@@ -10,7 +10,7 @@ const Accordion = () => {
           <Image width={150} height={100} src="/shap2.png" alt="design"></Image>
         </div>
         {/* main accordion start  */}
-        <div className="accordion_main gap-12 flex flex-col sm:flex-row justify-between items-center min-h-screen mt-8">
+        <div className="accordion_main gap-12 flex flex-col md:flex-row justify-between items-center min-h-screen mt-8">
           <div className="accordion_main_image w-10/12">
             <Image
               style={{ flex: 1 }}

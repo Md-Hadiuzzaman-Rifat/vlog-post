@@ -32,9 +32,9 @@ const Features = () => {
           <TextBtn>Features</TextBtn>
           <div className="flex items-center resize_RowToColumn justify-between">
             
-              <h2 className="custom-p text-white my-12">
+              <h1 className="custom-h1 text-white my-12">
                 We help you to go online & increase your conversion rate.
-              </h2>
+              </h1>
 
             <div>
               <Link className="text-white font-extralight text-sm" href="/">
