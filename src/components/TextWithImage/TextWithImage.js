@@ -7,12 +7,12 @@ const TextWithImage = () => {
           <div className="relative">
             <Image
               src="/cartoon.jpg"
-              className="max-w-[450px] h-fit"
-              width={400}
-              height={400}
+              className="min-w-[250px] h-fit"
+              width={450}
+              height={450}
               alt="Cartoon Image"
             ></Image>
-            <div className="absolute top-[60%] left-[20%]">
+            <div className="absolute top-[63%] left-[20%]">
               <div className="bg-black max-w-[400px] p-6">
                 <Image src="/0.png"  width={60} height={60} alt="container"></Image>
                 <p className="my-6">We are a creative studio specializing in design, development and strategy many different skills and disciplines in the production of all web.</p>

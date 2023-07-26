@@ -11,27 +11,28 @@ export default function Scroll() {
     <div className=" mb-20 block min-h-[120vh] ">
       <div className={styles.background}/>
       <Parallax pages={4} className="overflow-y-scroll no-scrollbar">
-        <ParallaxLayer
+        <ParallaxLayer 
           sticky={{ start: 0, end: 2 }}
           style={{ ...alignCenter, justifyContent: "flex-start", opacity: 1 }}
         >
           <div className={`${styles.card} ${styles.sticky}`}>
             <Image
             style={{height:"110vh", width:"90%"}}
+            className="hidden md:block"
               src="/book1.jpg"
               width={400}
               height={600}
               alt="book 1"
             ></Image>
-          </div>
+          </div> 
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={0}
-          speed={5.5}
+          speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
-          <div className={`${styles.card} ${styles.parallax} ${styles.purple}`}>
+          <div className={`${styles.card} ${styles.parallax} ${styles.purple} md:w-[20%] lg:min-w-[35%] lg:max-w-[70%]`}>
             <p className="custom-p">01. DIGITAL </p>
             <h1 className="custom-h1">Luxury Glassware.</h1>
             <p className="custom-p">
@@ -52,7 +53,7 @@ export default function Scroll() {
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
-          <div className={`${styles.card} ${styles.parallax} ${styles.purple}`}>
+          <div className={`${styles.card} ${styles.parallax} ${styles.purple}  md:w-[20%] lg:min-w-[35%] lg:max-w-[70%]`}>
             <p className="custom-p">01. DIGITAL </p>
             <h1 className="custom-h1">Luxury Glassware.</h1>
             <p className="custom-p">
@@ -68,7 +69,6 @@ export default function Scroll() {
           </div>
         </ParallaxLayer>
 
-
         <ParallaxLayer
         speed={0}
           sticky={{ start: 2, end: 4 }}
@@ -76,6 +76,7 @@ export default function Scroll() {
         >
           <div className={`${styles.card} ${styles.sticky}`}>
             <Image
+            className="hidden md:block"
               src="/book2.jpg"
               style={{height:"110vh", width:"90%"}}
               width={400}
@@ -85,12 +86,13 @@ export default function Scroll() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer
+        <ParallaxLayer 
+        className="w-[40%]"
           offset={2}
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
-          <div className={`${styles.card} ${styles.parallax} ${styles.purple}`}>
+          <div className={`${styles.card} ${styles.parallax} ${styles.purple} md:w-[20%] lg:min-w-[35%] lg:max-w-[70%]`}>
             <p className="custom-p">01. DIGITAL </p>
             <h1 className="custom-h1">Luxury Glassware.</h1>
             <p className="custom-p">
@@ -111,7 +113,7 @@ export default function Scroll() {
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
-          <div className={`${styles.card} ${styles.parallax} ${styles.purple}`}>
+          <div className={`${styles.card} ${styles.parallax} ${styles.purple} md:w-[20%] lg:min-w-[35%] lg:max-w-[70%]`}>
             <p className="custom-p">01. DIGITAL </p>
             <h1 className="custom-h1">Luxury Glassware.</h1>
             <p className="custom-p">
