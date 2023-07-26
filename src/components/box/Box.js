@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 const Box = ({ img, title }) => {
   return (
-    <div className="mt-24">
+    <div className="mt-12 min-w-[30%] w-full">
       <div className="border-[0.5px] text-white text-sm font-bold border-gray-600 rounded-md px-12 py-16">
         <Image src={img} width={60} height={60} alt="Brand Strategy"></Image>
         <h3 className="mt-12 mb-8">{title}</h3>

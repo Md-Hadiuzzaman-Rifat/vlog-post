@@ -1,26 +1,30 @@
 import React from "react";
 import TextBtn from "../textBtn/TextBtn";
+import Image from "next/image";
+import FeatureBox from "../featureBox/FeatureBox";
+import ServiceContent from "../ServiceContent/ServiceContent";
+import TextWithImage from "../TextWithImage/TextWithImage";
+
+const details = [
+  {
+    id: 1,
+    img: "/0.png",
+    title: "Brand Strategy & Art Direction",
+  },
+];
 
 const Services = () => {
   return (
-    <div className="text-white">
-      <TextBtn>SERVICES</TextBtn>
-      <p className="mb-16 mt-8">
-        We help you to go online and increase your conversion rate Better design
-        for your digital products.
-      </p>
-      <div>
-        <div className="flex items-center mt-8">
-          <p className="text-xl font-bold mr-8">01</p> <span className="custom-h1">UI/UX Design</span>
-        </div>
-        <div className="flex items-center mt-8">
-          <p className="text-xl font-bold mr-8">02</p> <span className="custom-h1">Branding</span>
-        </div>
-        <div className="flex items-center mt-8">
-          <p className="text-xl font-bold mr-8">03</p> <span className="custom-h1">Development</span>
-        </div>
-        <div className="flex items-center mt-8">
-          <p className="text-xl font-bold mr-8">04</p> <span className="custom-h1">Marketing</span>
+    <div className="text-white my-52 flex flex-col lg:flex-row gap-8">
+      <TextWithImage></TextWithImage>
+      <div className="flex flex-col">
+        <TextBtn>SERVICES</TextBtn>
+        <p className="mb-16 mt-8 w-[60%]">
+          We help you to go online and increase your conversion rate Better
+          design for your digital products.
+        </p>
+        <div className="ml-16">
+          <ServiceContent></ServiceContent>
         </div>
       </div>
     </div>

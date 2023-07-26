@@ -10,7 +10,15 @@
   }
 }
 
-@layer utilities{
+
+@layer components{
+
+  .resize_RowToColumn{
+    @apply flex flex-col lg:flex-row gap-8 lg:justify-between
+  }
+  .blog-container{
+    @apply px-4 md:px-8 lg:px-24
+  }
   .custom-p{
     @apply font-light text-[15px] leading-[28px] tracking-wider;
   }
@@ -19,18 +27,6 @@
   }
   .large-h1{
     @apply font-black text-2xl md:text-4xl lg:text-6xl
-  }
-}
-
-@layer components{
-  .approachBox{
-    @apply border rounded-[200px] gap-8 border-gray-500  hover:border-orange-500 p-8 flex justify-center flex-col align-middle box-content
-  }
-  .resize_RowToColumn{
-    @apply flex flex-col md:flex-row gap-2
-  }
-  .blog-container{
-    @apply px-4 md:px-8 lg:px-24
   }
 }
 

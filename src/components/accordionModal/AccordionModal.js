@@ -53,30 +53,30 @@ export default function CustomizedAccordions() {
     <div>
       <Accordion style={{backgroundColor:"#1f1f1f", borderBottom:"1px solid gray", color:"white"}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-          <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography>Website & Mobile App Design</Typography>  
+          <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography style={{fontSize:"1.35rem"}}>Website & Mobile App Design</Typography>  
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{fontSize:"0.75rem"}}>
+          <Typography style={{fontSize:"1.2rem"}}>
           Taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my whole.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion style={{backgroundColor:"#1f1f1f", borderBottom:"1px solid gray", color:"white"}}  expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" >
-          <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography>Motion Graphics & Animation</Typography> 
+          <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography style={{fontSize:"1.35rem"}}>Motion Graphics & Animation</Typography> 
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{fontSize:"0.75rem"}}>
+          <Typography style={{fontSize:"1.2rem"}}>
           Taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my whole.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion  style={{backgroundColor:"#1f1f1f", borderBottom:"1px solid gray", color:"white"}}  expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" >
-          <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography>User Experience</Typography> 
+          <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography style={{fontSize:"1.35rem"}}>User Experience</Typography> 
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{fontSize:"0.75rem"}}>
+          <Typography style={{fontSize:"1.2rem"}}>
           Taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my whole.
           </Typography>
         </AccordionDetails>

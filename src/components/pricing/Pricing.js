@@ -5,7 +5,7 @@ import Button from "../button/Button";
 
 const Pricing = () => {
   return (
-    <div className="pricing resize_RowToColumn mb-24 gap-8 mt-24">
+    <div className="pricing resize_RowToColumn mb-48 gap-8">
       <div className="pricing_top" style={{ flex: 3 }}>
         <div>
           <p>OVER 150.000+ CLIENTS</p>
@@ -55,7 +55,7 @@ const Pricing = () => {
         </div>
         {/* // other section  */}
 
-        <div className="text-black gap-2 items-center resize_RowToColumn bg-[#f08f74] w-full p-8 rounded-3xl gap-4 justify-between">
+        <div className="text-black gap-4 items-center resize_RowToColumn bg-[#f08f74] w-full p-8 rounded-3xl gap-4 justify-between">
           <div>
           <h3>Advanced</h3>
           <p>14 days free</p>
@@ -66,7 +66,7 @@ const Pricing = () => {
             <li>Top quality service</li>
             <li>Best experts at your lease</li>
           </ul>
-          <div className="flex md:flex-col justify-around flex-wrap items-center justify-center w-full">
+          <div className="flex md:flex-col flex-wrap items-center justify-center w-full">
             <h2>$ 19</h2>
             <Button className="btn-black">Sign Up</Button>
           </div>

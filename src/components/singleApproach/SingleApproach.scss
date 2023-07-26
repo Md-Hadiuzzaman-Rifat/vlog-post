@@ -1,4 +1,4 @@
-.approachBox{
+.approachContainer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,3 +10,6 @@
 		font-size: 5rem;
 	}
 }
+.approachBox{
+    @apply border rounded-[200px] gap-8 border-gray-500  hover:border-orange-500 p-8 flex justify-center flex-col align-middle box-content
+  }
