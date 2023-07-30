@@ -192,7 +192,7 @@ export const parentVariants=(delay)=>({
     show:{
         opacity: 1,
         transition:{
-            duration: 0.5,
+            duration: 0.2,
             delay:delay,
             when:"beforeChildren",
             staggerChildren:0.4
