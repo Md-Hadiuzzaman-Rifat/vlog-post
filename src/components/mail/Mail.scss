@@ -1,4 +1,8 @@
-.mail{
-    @apply
-        h-screen leading-tight font-black flex flex-col justify-center align-middle text-white text-6xl text-center
+.mail-flex{
+    @apply flex flex-col justify-center align-middle h-screen w-full
 }
+.common-mail{
+    @apply
+        leading-tight font-black  text-6xl text-center
+}
+

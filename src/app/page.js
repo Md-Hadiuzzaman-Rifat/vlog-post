@@ -42,20 +42,6 @@ const Page = () => {
       )}
     </div>
   );
-  // return (
-  //   <div className="bg-[#1d1d1d] md:px-16 px-4">
-  //     <Banner></Banner>
-  //     <Features></Features>
-  //     <Accordion></Accordion>
-  //     <Portfolio></Portfolio>
-  //     <Pricing></Pricing>
-  //     <Services></Services>
-  //     <Approach></Approach>
-  //     <Mail></Mail>
-  //     <OurBlog></OurBlog>
-  //     <Address></Address>
-  //   </div>
-  // );
 };
 
 export default Page;

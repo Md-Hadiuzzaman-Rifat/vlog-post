@@ -34,7 +34,7 @@ const Accordion = () => {
           {/* // real accordion  */}
           <div style={{ width: "70%" }}>
             <motion.h3
-              variants={textVariant(0.2)}
+              variants={fadeIn("up", "tween", 0, 0.5)}
               className="font-bold mb-8 text-3xl mb-6 text-white"
             >
               We grow brands through bold & strategic creative

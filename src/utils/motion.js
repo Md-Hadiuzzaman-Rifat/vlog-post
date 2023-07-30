@@ -202,7 +202,7 @@ export const parentVariants=(delay)=>({
 export const childVariants={
     hidden:{
         opacity:0,
-        x:"-100vw"
+        x:"100vw"
     },
     show:{
         opacity:1, 
