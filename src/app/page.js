@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Accordion from "@/components/accordion/Accordion";
 import Approach from "@/components/approach/Approach";
 import Banner from "@/components/banner/Banner";
@@ -10,22 +10,52 @@ import Services from "@/components/services/Services";
 import React from "react";
 import OurBlog from "@/components/OurBlog/OurBlog";
 import Address from "@/components/address/Address";
+import { useEffect, useState } from "react";
+import Loading from "@/components/loading/Loading";
+const Page = () => {
+  const [loading, setLoading] = useState(true);
 
-const page = () => {
+  useEffect(() => {
+    setTimeout(counter, 1000)
+  }, []);
+
+  const counter=()=>{
+    setLoading((data)=>!data)
+  }
+
   return (
     <div className="bg-[#1d1d1d] md:px-16 px-4">
-      <Banner></Banner>
-      <Features></Features>
-      <Accordion></Accordion>
-      <Portfolio></Portfolio>
-      <Pricing></Pricing>
-      <Services></Services>
-      <Approach></Approach>
-      <Mail></Mail>
-      <OurBlog></OurBlog>
-      <Address></Address>
+      {loading && <Loading></Loading>}
+      {!loading && (
+        <div>
+          <Banner></Banner>
+          <Features></Features>
+          <Accordion></Accordion>
+          <Portfolio></Portfolio>
+          <Pricing></Pricing>
+          <Services></Services>
+          <Approach></Approach>
+          <Mail></Mail>
+          <OurBlog></OurBlog>
+          <Address></Address>
+        </div>
+      )}
     </div>
   );
+  // return (
+  //   <div className="bg-[#1d1d1d] md:px-16 px-4">
+  //     <Banner></Banner>
+  //     <Features></Features>
+  //     <Accordion></Accordion>
+  //     <Portfolio></Portfolio>
+  //     <Pricing></Pricing>
+  //     <Services></Services>
+  //     <Approach></Approach>
+  //     <Mail></Mail>
+  //     <OurBlog></OurBlog>
+  //     <Address></Address>
+  //   </div>
+  // );
 };
 
-export default page;
+export default Page;

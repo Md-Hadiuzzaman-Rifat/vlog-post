@@ -3,7 +3,7 @@ import TextBtn from '../textBtn/TextBtn';
 
 const Portfolio = () => {
     return (
-        <div>
+        <div className='my-48'>
             <TextBtn>Portfolio</TextBtn>
             <div>
                 <h1>Recent Projects</h1>

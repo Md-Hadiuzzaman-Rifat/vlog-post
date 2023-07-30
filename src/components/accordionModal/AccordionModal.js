@@ -5,6 +5,8 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { BsArrowDown } from "react-icons/bs";
+import {motion} from "framer-motion"
+import { fadeIn } from '@/utils/motion';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -50,7 +52,12 @@ export default function CustomizedAccordions() {
 
 
   return (
-    <div>
+    <motion.div
+      variants={fadeIn("up", "tween", 0.1, 0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once:false, amount: 0.25}}
+    >
       <Accordion style={{backgroundColor:"#1f1f1f", borderBottom:"1px solid gray", color:"white"}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
           <div style={{marginRight:"5rem"}}><BsArrowDown/></div><Typography style={{fontSize:"1rem"}}>Website & Mobile App Design</Typography>  
@@ -81,6 +88,6 @@ export default function CustomizedAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-    </div>
+    </motion.div>
   );
 }

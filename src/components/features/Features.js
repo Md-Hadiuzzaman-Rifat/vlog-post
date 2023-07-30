@@ -5,47 +5,41 @@ import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import FeatureBox from "../featureBox/FeatureBox";
 import LinkText from "../linkText/LinkText";
-
-const details = [
-  {
-    id: 1,
-    img: "/0.png",
-    title: "Brand Strategy & Art Direction",
-  },
-  {
-    id: 2,
-    img: "/1.png",
-    title: "UX/UI Design & Website/App Design",
-  },
-  {
-    id: 3,
-    img: "/2.png",
-    title: "Engage your customers dramatically.",
-  },
-];
+import { details } from "./data";
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, staggerContainer } from "@/utils/motion";
 
 const Features = () => {
   return (
-    <div className="features">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="features"
+    >
       <div>
         <div>
-          <TextBtn>Features</TextBtn>
+          <motion.div variants={fadeIn("right", "tween", 0, 0.5)}>
+            <TextBtn>Features</TextBtn>
+          </motion.div>
           <div className="flex items-center resize_RowToColumn justify-between">
-            
-              <h1 className="custom-h1 text-white my-12">
-                We help you to go online & increase your conversion rate.
-              </h1>
+            <motion.h1 variants={fadeIn("up", "tween", 0, 1)} className="custom-h1 text-white my-12">
+              We help you to go online & increase your conversion rate.
+            </motion.h1>
 
-            <div>
+            <motion.div
+              variants={fadeIn("left", "tween", 0.1, 0.5)}
+            >
               <Link className="text-white font-extralight text-sm" href="/">
                 <LinkText>View All Services</LinkText>
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
       <FeatureBox details={details}></FeatureBox>
-    </div>
+    </motion.div>
   );
 };
 

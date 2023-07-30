@@ -1,10 +1,18 @@
 import React from "react";
 import Button from "../button/Button";
 import Image from "next/image";
+import {motion} from "framer-motion"
+import { coverVariants } from "@/utils/motion";
+
 
 const Banner = () => {
   return (
-    <div className="banner_section  min-h-screen items-center resize_RowToColumnMd">
+    <motion.div
+      variants={coverVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once:true, amount: 0.25}}
+    className="banner_section  min-h-screen items-center resize_RowToColumnMd">
       <div className="flex flex-col mb-24 justify-start banner_section_left flex-1 mb">
         <h1 className="text-5xl tracking-wider text-white font-semibold leading-[4.5rem]">
           Better design for your digital products.
@@ -26,7 +34,7 @@ const Banner = () => {
           alt="Header Image"
         ></Image>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
