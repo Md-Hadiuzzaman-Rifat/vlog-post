@@ -4,24 +4,30 @@ import Image from "next/image";
 import bnr from "../images/footerpic.jpg";
 import "./FooterBanner.scss";
 import CircleBtn from "../circleBtn/CircleBtn";
-// fill w-[90%] h-[450px] src={bg} fill
+import {motion} from "framer-motion"
+import { childVariants, slideIn, staggerContainer } from "@/utils/motion";
 
 const FooterBanner = () => {
   return (
-    <div className="text-white min-h-screen my-24 relative">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once:false, amount: 0.25}}
+    className="text-white min-h-screen my-24 relative">
       <div className="pos">
         <Image src={bg} className="cover" alt="cover image"></Image>
         <div className="paragraph">
-          <div className="text">
+          <motion.div variants={slideIn("up", "tween", 0.2, 0.5)} className="text">
             <h3 className=" font-bold text-4xl">
               Have a project in mind?<br />{" "} Lets  
               <span className=" font-sans font-light italic"> get to work.</span>
             </h3>
-          </div>
+          </motion.div>
           <CircleBtn></CircleBtn>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
