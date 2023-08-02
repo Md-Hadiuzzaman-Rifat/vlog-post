@@ -5,8 +5,7 @@ import { useState } from "react";
 import LoginBtn from "@/components/loginBtn/LoginBtn";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
-import Loading from "@/components/loading/Loading";
-import useSWR from 'swr'
+
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -17,42 +16,25 @@ const Register = () => {
   const session = useSession();
   const router = useRouter();
 
-  // const {data}=useSWR("/api/auth/register")
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    // console.log(name,email,password);
-    // try {
-    //   const res = await fetch("api/auth/register", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       name,
-    //       email,
-    //       password,
-    //     }),
-    //   });
-    //   console.log(res);
-    // } 
-    
     try{
-      fetch("/api/auth/register",(url)=>postData(url,{name,email,password}))
+      const res= await fetch('/api/auth/register',{
+        method: "POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body:JSON.stringify({name, email, password})
+      })
+      res.status === 201 && router.push('/signin')
+    }catch(err){
+     setErr(err)
+     console.log(err);
     }
-    catch (err) {
-      setErr(true);
-    }
+    
   };
-  // if authenticated
-  {
-    session?.status === "authenticated" && router.push("/")
-  } 
-  // if loading
-  {
-    session?.status === "loading" && <Loading></Loading>;
-  }
-  // if authenticated
+  // if unauthenticated
   {
     if (session?.status === "unauthenticated") {
       return (
@@ -78,7 +60,7 @@ const Register = () => {
                 placeholder="Enter Password"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              {err && <p className="text-red-500">{err}</p>}
+              {/* {err && <p className="text-red-500">{err}</p>} */}
               <LoginBtn>LogIn</LoginBtn>
             </form>
           </div>

@@ -1,8 +1,7 @@
-"use client";
+"use client"
 import Navbar from "@/components/navbar/Navbar";
 import "./globals.scss";
 import AnimatedCursor from "react-animated-cursor";
-
 import { SessionProvider } from "next-auth/react";
 
 export default function RootLayout({ children }) {

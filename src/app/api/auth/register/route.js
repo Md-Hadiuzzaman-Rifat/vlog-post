@@ -2,15 +2,14 @@ import connect from "@/utils/db";
 import { NextResponse } from "next/server";
 import User from "@/modal/User"
 import bcrypt from "bcryptjs"
-
+ 
 export const POST= async(request)=>{
     const {name,email,password}=await request.json()
-    console.log(name,email,password+" Hello MC");
 
     await connect()
     const hashedPassword= await bcrypt.hash(password,5)
     const newUser = new User({
-        name,email,hashedPassword
+        name,email,password:hashedPassword
     })
  
     try{
@@ -23,5 +22,5 @@ export const POST= async(request)=>{
             status:500
         })
     }
-}
+} 
 
