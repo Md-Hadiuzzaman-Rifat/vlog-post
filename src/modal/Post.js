@@ -12,6 +12,9 @@ const postSchema=new Schema({
     description:{
         type: String,
         required: true
+    },
+    image:{
+        type:String
     }
 },{timestamps:true})
 module.exports = mongoose.models.Post || mongoose.model("Post",postSchema)

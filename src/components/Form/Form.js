@@ -2,27 +2,41 @@
 import React from "react";
 import "./Form.scss";
 import {useState} from "react";
+import Image from "next/image";
 
 const Form = () => {
   const [title,setTitle]=useState("")
   const [category,setCategory]=useState("")
   const [text,setText]=useState("")
+  const [image, setImage]= useState("")
+
+  const handleImage=(e)=>{
+    const reader= new FileReader()
+    reader.readAsDataURL(e.target.files[0])
+    reader.onload=()=>{
+      setImage(reader.result)
+    }
+    reader.onerror=(error)=>{
+      console.log("Error "+error );
+    }
+  }
 
   const handlePost=async(e)=>{
     e.preventDefault()
-    console.log(title,category,text);
-    const res=await fetch("/api/auth/posts",{
-      method:"POST",
-      headers:{
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify({
-        title,
-        category, 
-        text
+    // console.log(title,category,text, image);
+
+    try{
+      const response =await fetch('/api/posts',{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        }, 
+        body:JSON.stringify({title, category, description:text, image})
       })
-    })
-    console.log(res);
+      console.log(response);
+    }catch(err){
+      console.log(err);
+    }    
   }
 
   return (
@@ -39,6 +53,12 @@ const Form = () => {
             cols="30"
             rows="2"
           ></textarea>
+          <div className="fileUpload">
+          <input type="file" onChange={handleImage}/>
+          {
+            image == "" || image == null ? "": <Image src={image} height={100} width={100} alt="done upload"></Image>
+          }
+          </div>
         </div>
       </div>
       <button type="submit" style={{color:"white"}}>Post</button>
