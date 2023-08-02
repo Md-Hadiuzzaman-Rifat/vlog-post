@@ -56,12 +56,12 @@ const Form = () => {
           <div className="fileUpload">
           <input type="file" onChange={handleImage}/>
           {
-            image == "" || image == null ? "": <Image src={image} height={100} width={100} alt="done upload"></Image>
+            image == "" || image == null ? "": <Image src={image} className="form-img-container" height={100} width={70} alt="done upload"></Image>
           }
           </div>
         </div>
       </div>
-      <button type="submit" style={{color:"white"}}>Post</button>
+      <button type="submit" className="form-btn-style">Post</button>
     </form>
   );
 };

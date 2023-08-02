@@ -1,25 +1,42 @@
-.form_container{
-    .form_container_input{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+.form_container {
+  .form_container_input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-        h1{
-            color: white;
-            font-size: 2rem;
-            font-weight: bold
-        };
-        input, textarea{
-            background-color: transparent;
-            border: none;
-            outline: none;
-            outline: 1px solid rgba(255, 255, 255, 0.425);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .fileUpload{
-            height: 100px;
-        }
+    h1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
     }
+    input,
+    textarea {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      outline: 1px solid rgba(255, 255, 255, 0.425);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .fileUpload {
+      height: 160px;
+      border: 1px solid gray;
+      margin-bottom: 10px;
+    }
+    .form-img-container {
+      height: 100px;
+      width: 70px;
+      object-fit: cover;
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+  }
+}
+.form-btn-style {
+  color: white;
+  padding: 10px 40px;
+  background: red;
+  font-weight: bold;
+  border-radius: 5px;
 }
