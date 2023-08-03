@@ -27,7 +27,7 @@ const Page = () => {
     <div className="bg-[#1d1d1d] md:px-16 px-4">
       {loading && <Loading></Loading>}
       {!loading && (
-        <div>
+        <div className="overflow-x-hidden	">
           <Banner></Banner>
           <Features></Features>
           <Accordion></Accordion>

@@ -3,6 +3,7 @@ import React from "react";
 import "./Form.scss";
 import {useState} from "react";
 import Image from "next/image";
+import ActionButton from "../ActionButton/ActionButton";
 
 const Form = () => {
   const [title,setTitle]=useState("")
@@ -59,7 +60,10 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <button type="submit" className="form-btn-style">Post</button>
+      {/* <button type="submit" className="form-btn-style">Post</button> */}
+      <ActionButton type="submit">
+        Post
+      </ActionButton>
     </form>
   );
 };

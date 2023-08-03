@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="navbar_right">
           {session.status === "authenticated" && (
             <div className="flex flex-wrap justify-center gap-6">
-              <Link href="/profile">Profile</Link>
+              <Link className="border-2 border-gray-400 rounded-full px-4 text-red-500 py-1" href="/profile">Profile</Link>
               <Link href="/" onClick={() => signOut()}>
                 Logout
               </Link>

@@ -23,7 +23,7 @@ const OurBlog = () => {
         <motion.div
           variants={fadeIn("right", "tween", 0, 0.8)}
         className="flex sm:flex-row flex-col gap-8">
-          <Image src="/1.jpg" className="w-[300px] max-w-[400px] sm:w-full rounded-l-lg" width={200} height={300} alt="A person"></Image>
+          <Image src="/1.jpg" className="object-cover min-w-[250px] max-w-[400px] sm:w-full rounded-l-lg" width={200} height={300} alt="A person"></Image>
           <div className="flex flex-col gap-8">
             <p>AUGUST 6, 2022</p>
             <h1 className="custom-h1">Business advertising for your online business.</h1>
@@ -36,7 +36,7 @@ const OurBlog = () => {
         <motion.div
           variants={fadeIn('left',"tween", 0, 0.8)}
         className="flex sm:flex-row flex-col gap-8">
-          <Image src="/2.jpg" className="w-[300px] max-w-[400px] sm:w-full rounded-l-lg" width={200} height={300} alt="A person"></Image>
+          <Image src="/2.jpg" className="object-cover min-w-[250px] max-w-[400px] sm:w-full rounded-l-lg" width={200} height={300} alt="A person"></Image>
           <div className="flex flex-col gap-8">
             <p>AUGUST 6, 2022</p>
             <h1 className="custom-h1">Business meeting 2023 in San Francisco.</h1>

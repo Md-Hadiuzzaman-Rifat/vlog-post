@@ -5,6 +5,7 @@ import { useState } from "react";
 import LoginBtn from "@/components/loginBtn/LoginBtn";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+import ActionButton from "@/components/ActionButton/ActionButton";
 
 
 const Register = () => {
@@ -61,7 +62,7 @@ const Register = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
               {/* {err && <p className="text-red-500">{err}</p>} */}
-              <LoginBtn>LogIn</LoginBtn>
+              <ActionButton type="submit">Register</ActionButton>
             </form>
           </div>
         </div>
