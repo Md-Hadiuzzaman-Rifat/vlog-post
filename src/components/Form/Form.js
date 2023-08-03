@@ -20,11 +20,9 @@ const Form = () => {
       console.log("Error "+error );
     }
   }
-
+ 
   const handlePost=async(e)=>{
     e.preventDefault()
-    // console.log(title,category,text, image);
-
     try{
       const response =await fetch('/api/posts',{
         method:"POST",

@@ -15,15 +15,15 @@ const NewsFeed = async () => {
   const data = await getData();
   return (
     <div className="newsFeed">
-      <div className="newsFeed_content">
+      <div className="newsFeed_content flex flex-col gap-4">
         {
-            data.map((item)=><div key={Math.random}className="newsFeed_content_item">
+            data.map((item)=><div key={Math.random}className="newsFeed_content_item gap-4 flex flex-col md:flex-row items-center">
             <div className="newsFeed_Image">
-                <Image src={item.image} width={300} height={400} alt={item.title} ></Image>
+                <Image src={item.image} className="max-w-[300px] min-w-[200px]" width={300} height={400} alt={item.title} ></Image>
             </div>
             <div>
-                <h1>{item.title}</h1>
-                <small>{item.category}</small>
+                <h1 className="custom-h1">{item.title}</h1>
+                <small className="text-red-500 font-bold">{item.category}</small>
                 <p>{item.description}</p>
             </div>
         </div>)

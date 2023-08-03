@@ -16,7 +16,8 @@ const Navbar = () => {
         </div>
         <div className="navbar_middle flex flex-wrap justify-center gap-6">
           <Link href="/about">About</Link>
-          <BsSearch className="self-center"></BsSearch>
+          <Link href="/newsfeed">NewsFeed</Link>
+          {/* <BsSearch className="self-center"></BsSearch> */}
         </div>
         <div className="navbar_right">
           {session.status === "authenticated" && (

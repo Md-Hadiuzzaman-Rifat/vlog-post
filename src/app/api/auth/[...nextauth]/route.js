@@ -63,7 +63,6 @@ const handler = NextAuth({
       async authorize(credentials) {
         //Check if the user exists.
         await connect();
-
         try {
           const user = await User.findOne({
             email: credentials.email,
