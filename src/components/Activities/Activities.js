@@ -27,8 +27,8 @@ const Activities = () => {
 
   if (session.status === "authenticated") {
     return (
-      <div className="text-blue-500">
-        <h1 className="large-h1 underline py-4">YOUR ACTIVITIES</h1>
+      <div className="text-white">
+        <h1 style={{fontSize:"2rem", fontWeight:"bold", margin:"4px 0"}}>YOUR ACTIVITIES</h1>
         <div>
           {isLoading
             ? "loading"

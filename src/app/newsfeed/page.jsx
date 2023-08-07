@@ -37,7 +37,7 @@ const NewsFeed = async () => {
                 ></Image>
               </div>
               <div className="flex flex-col gap-4">
-                <h1 className="custom-h1">Title : &quot;{item.title} &#34;</h1>
+                <h1 className="custom-h1">{item.title}</h1>
                 <small className="text-red-500 font-bold">
                   Category : &quot; {item.category} &quot;
                 </small>

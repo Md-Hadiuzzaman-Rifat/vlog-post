@@ -6,7 +6,6 @@ import Image from "next/image";
 import ActionButton from "../ActionButton/ActionButton";
 import { useSession } from "next-auth/react";
 
-
 const Form = () => {
   const [title,setTitle]=useState("")
   const [category,setCategory]=useState("")
@@ -40,8 +39,10 @@ const Form = () => {
         }, 
         body:JSON.stringify({title, description:text, username:name, category, description:text, image})
       })
+      alert("Post is Updating. Wait for a while.")
       mutate()
       e.target.reset()
+      
     }catch(err){
       console.log(err);
     }    
@@ -62,7 +63,7 @@ const Form = () => {
             rows="2"
           ></textarea>
           <div className="fileUpload">
-          <input type="file" onChange={handleImage}/>
+          <input type="file" style={{outline:"none"}} onChange={handleImage}/>
           {
             image == "" || image == null ? "": <Image src={image} className="form-img-container" height={100} width={70} alt="done upload"></Image>
           }
