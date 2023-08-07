@@ -4,6 +4,7 @@ import "./profile.scss";
 import Form from "@/components/Form/Form";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Activities from "@/components/Activities/Activities";
 
 const Profile = () => {
   const session = useSession();
@@ -18,8 +19,9 @@ const Profile = () => {
     session.status === "authenticated" && (
       <div className="profile">
         <h2>PROFILE</h2>
-        <div className="profile_container">
+        <div className="profile_container flex flex-col lg:flex-row gap-16">
           <Form></Form>
+          <Activities></Activities>
         </div>
       </div>
     )

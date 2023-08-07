@@ -2,10 +2,14 @@ import Post from "@/modal/Post"
 import connect from "@/utils/db"
 import { NextResponse } from "next/server"
 
-export const GET= async()=>{
+export const GET= async(request)=>{
+
+  const url = new URL(request.url);
+  const username = url.searchParams.get("username");
+
   try{
     await connect()
-    const posts= await Post.find() 
+    const posts= await Post.find( username && {username}) 
     return new NextResponse(JSON.stringify(posts),{
       status:202
     })
@@ -19,6 +23,7 @@ export const GET= async()=>{
 
 export const POST = async(request)=>{
   const body= await request.json()
+  console.log(body);
   const newPost= new Post(body)
   try{
     connect()

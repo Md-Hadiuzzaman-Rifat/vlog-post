@@ -5,7 +5,7 @@ import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
   const session = useSession();
-  console.log(session?.status);
+  console.log(session.data?.user?.name);
   return (
     <div className="navbar bg-[#1d1d1d] w-full text-white px-12 py-4">
       <div className="navbar_content flex flex-row justify-around">
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="navbar_right">
           {session.status === "authenticated" && (
             <div className="flex flex-wrap justify-center gap-6">
-              <Link className="border-2 border-gray-400 rounded-full px-4 text-red-500 py-1" href="/profile">Profile</Link>
+              <Link className="border-2 border-gray-400 rounded-full px-4 text-red-400 py-1" href="/profile">Profile</Link>
               <Link href="/" onClick={() => signOut()}>
                 Logout
               </Link>
