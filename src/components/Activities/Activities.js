@@ -31,7 +31,7 @@ const Activities = () => {
         <h1 style={{fontSize:"2rem", fontWeight:"bold", margin:"4px 0"}}>YOUR ACTIVITIES</h1>
         <div>
           {isLoading
-            ? "loading"
+            ? <p className="text-2xl bg-red-500">Loading</p>
             : data?.map((item) => (
                 <div key={item._id} className="h-[110px] flex flex-col gap-2">
                   <div className="min-w-[250px] justify-between p-2 flex flex-row gap-2">

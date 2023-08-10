@@ -3,8 +3,8 @@ import "./newsfeed.scss";
 import Image from "next/image";
 
 async function getData() {
-  // const res = await fetch("https://vlog-post-newsfeed.vercel.app/api/posts", {
-  const res = await fetch("https://vlog-post.vercel.app/api/posts", {
+
+  const res = await fetch("https://vlog-post-md-hadiuzzaman-rifat.vercel.app/api/posts", {
     cache: "no-store",
   });
   if (!res.ok) {

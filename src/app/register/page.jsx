@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import ActionButton from "@/components/ActionButton/ActionButton";
 
-
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -17,23 +16,21 @@ const Register = () => {
   const session = useSession();
   const router = useRouter();
 
-
   const handleRegister = async (e) => {
     e.preventDefault();
-    try{
-      const res= await fetch('/api/auth/register',{
+    try {
+      const res = await fetch("/api/auth/register", {
         method: "POST",
-        headers:{
-          "Content-Type":"application/json"
+        headers: {
+          "Content-Type": "application/json",
         },
-        body:JSON.stringify({name, email, password})
-      })
-      res.status === 201 && router.push('/signin')
-    }catch(err){
-     setErr(err)
-     console.log(err);
+        body: JSON.stringify({ name, email, password }),
+      });
+      res.status === 201 && router.push("/signin");
+    } catch (err) {
+      setErr(err);
+      console.log(err);
     }
-    
   };
   // if unauthenticated
   {
@@ -70,6 +67,5 @@ const Register = () => {
     }
   }
 };
-
 
 export default Register;
