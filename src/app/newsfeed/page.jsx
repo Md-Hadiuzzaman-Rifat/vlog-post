@@ -17,7 +17,7 @@ const NewsFeed = async () => {
   const data = await getData();
   return (
 
-      <div className="newsFeed">
+      <div className="newsFeed px-8">
 
         <div className="newsFeed_content flex flex-col gap-8">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-500 my-10">
