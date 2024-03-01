@@ -15,7 +15,7 @@ const Banner = () => {
     className="banner_section  min-h-screen items-center resize_RowToColumnMd">
       <div className="flex flex-col mb-24 justify-start banner_section_left flex-1 mb">
         <h1 className="text-5xl tracking-wider text-white font-semibold leading-[4.5rem]">
-          Better design for your digital products.
+          Worse design for your digital products.
         </h1>
         <p className="text-white text-sm font-extralight my-4 w-4/6 py-4">
           We are a creative studio specializing in UI/UX design, development and
