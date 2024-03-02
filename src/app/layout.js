@@ -8,20 +8,22 @@ import ScrollComponent from "@/components/ScrollComponent/ScrollComponent";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-[1400px] center scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-black">
+      <body className="w-100% bg-[#1D1D1D]">
+        <div className="max-w-[1400px] center scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-black">
         <SessionProvider>
-          {/* <AnimatedCursor
-            innerSize={10}
-            outerSize={10}
+          <AnimatedCursor
+            innerSize={30}
+            outerSize={20}
             color="255, 255 ,255"
             outerAlpha={0.4}
             innerScale={0.7}
             outerScale={4}
-          /> */}
+          />
           <ScrollComponent></ScrollComponent>
           <Navbar></Navbar>
           {children}
         </SessionProvider>
+        </div>
       </body>
     </html>
   );
