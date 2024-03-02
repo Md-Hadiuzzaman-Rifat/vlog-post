@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
         <div className="navbar_middle flex flex-wrap justify-center gap-6">
           <Link href="/about">About</Link>
-          <Link href="/newsfeed">Article</Link>
+          {/* <Link href="/newsfeed">Article</Link> */}
           {/* <BsSearch className="self-center"></BsSearch> */}
         </div>
         <div className="navbar_right">
